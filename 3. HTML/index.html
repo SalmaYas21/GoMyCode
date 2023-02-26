@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Checkpoint</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Currently a materials science student enjoying coding and web dev </p>
+            <br/>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cum dolorem consequatur aliquam sapiente maiores natus veniam labore magni? Velit eveniet cumque accusantium tempora magnam error ipsam corrupti rerum quidem.
+            </p>
+		</section>
+		<section id="work">
+			<h2>My Work</h2>
+			<p>Here's some previous projects I did from <i>FreeCodeCamp website</i></p>
+            <div class="inline">
+            <figure>
+                <img src="./multimedia/coffee shop.png" alt="coffee shop"/>
+                <figcaption>Coffee Shop Menu</figcaption>
+            </figure>
+            <figure>
+                <img src="./multimedia/typography with nutrition label.png" alt="nutrition label" />
+                <figcaption>Nutrition Label Typography</figcaption>
+            </figure>
+            <figure>
+                <video width="600" autoplay controls>
+                    <source src="./multimedia/Front end form.mp4" type="video/mp4" >
+                </video>
+                <figcaption>HTML and CSS form</figcaption>
+            </figure>
+            </div>
+		</section>
+		<section id="resume">
+			<h2>My Resume</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis velit numquam sapiente et maxime cum vero at laudantium, explicabo illo quaerat aspernatur atque maiores vel quos expedita repellat, molestiae ratione.</p>
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright © My Webpage 2023.
+	</footer>
+</body>
+</html>
