@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Pizza Orders</h1>
+        <table>
+            <tr class="header">
+                <td>item</td>
+                <td>Price</td>
+                <td>quantity</td>
+                <td>remove</td>
+                <td>like</td>
+            </tr>
+            <div>
+            <tr class="item">
+                <td>Margarita</td>
+                <td class="price">400</td>
+                <td>
+                    <div>
+                        <div class="quantity">
+                            <div class="add-and-reduce">
+                                <div class="add">+</div>
+                                <div class="reduce">-</div>
+                            </div>
+                                <div class="number">1</div>
+                        </div>
+                </td>
+                <td><i class="remove fa-solid fa-trash"></i></td>
+                <td><i class="like fa-solid fa-heart"></i></td>
+            </tr>
+            <tr class="item">
+                <td>Trois Fromages</td>
+                <td class="price">600</td>
+                <td>
+                    <div class="quantity">
+                        <div class="add-and-reduce">
+                            <div class="add">+</div>
+                            <div class="reduce">-</div>
+                        </div>
+                            <div class="number">1</div>
+                    </div>
+                </td>
+                <td><i class="remove fa-solid fa-trash"></i></td>
+                <td><i class="like fa-solid fa-heart"></i></td>
+            </tr>
+            <tr class="item">
+                <td>La Carnivore</td>
+                <td class="price">800</td>
+                <td>
+                    <div class="quantity">
+                        <div class="add-and-reduce">
+                            <div class="add">+</div>
+                            <div class="reduce">-</div>
+                        </div>
+                            <div class="number">1</div>
+                    </div>
+                </td>
+                <td><i class="remove fa-solid fa-trash"></i></td>
+                <td><i class="like fa-solid fa-heart"></i></td>
+            </tr>
+        </div>
+        </table>
+        <div class="total-price">
+            <h2>Total Price</h2>
+            <div id="totalPrice"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
