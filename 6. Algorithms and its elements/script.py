@@ -1,5 +1,3 @@
-ALGORITHM types
-
 sentence = input("Enter a sentence: ")
 length = 0
 words = 1
