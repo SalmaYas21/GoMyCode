@@ -19,7 +19,6 @@ for (let i = 0; i < likes.length; i++) {
 
 
 /* Adding - removing quantity */
-var q = [1,1,1]
 
 var tPrice = 0;
 for (let i = 0; i < price.length; i++){
@@ -30,17 +29,14 @@ for (let i = 0; i < price.length; i++){
 for (let i = 0; i < add.length; i++) {
     add[i].addEventListener("click",function(){
         
-        q[i] = q[i]+1;
-        number[i].innerText = q[i];
+        number[i].innerText = number[i].innerText*1+1;
     
         tPrice = tPrice + price[i].innerText *1 ; 
         totalPrice.innerText = tPrice
     })
 
     reduce[i].addEventListener("click",function(){
-
-        q[i] = q[i]+1;
-        number[i].innerText = q[i];
+        number[i].innerText = number[i].innerText*1-1;
 
         tPrice = tPrice - price[i].innerText *1 ; 
         totalPrice.innerText = tPrice
@@ -52,12 +48,15 @@ for (let i = 0; i < add.length; i++) {
 
 for (let i = 0; i < remove.length; i++) {
     remove[i].addEventListener("click",function(){
+
         tPrice = tPrice - price[i].innerText *number[i].innerText ; 
-
-        var row=remove[i].parentNode.parentNode; /* Direct parent : td, elder parent : tr */
-        row.parentNode.removeChild(row)
-    
-
         totalPrice.innerText = tPrice
+
+        var row=remove[i].parentNode.parentNode;
+        row.remove()
+        /* 
+        var row=remove[i].parentNode.parentNode;
+        row.parentNode.removeChild(row)*/
     })
+    
 }
